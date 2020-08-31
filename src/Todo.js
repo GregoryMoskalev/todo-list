@@ -13,10 +13,11 @@ export class Todo extends Component {
 
 	render() {
 		return (
-			<div>
+			<li key={this.props.id}>
 				{this.props.content}
+				<button>Edit</button>
 				<button onClick={this.handleRemove}>X</button>
-			</div>
+			</li>
 		);
 	}
 }

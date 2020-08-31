@@ -12,8 +12,9 @@ export class NewTodoForm extends Component {
 
 	handleSubmit(evt) {
 		evt.preventDefault();
-		const newTodo = { ...this.state, id: uuidv4() };
-		this.props.add(newTodo);
+		const todos = { ...this.state, id: uuidv4() };
+		this.props.add(todos);
+		this.setState({ content: '' });
 	}
 
 	handleChange(evt) {
@@ -31,6 +32,7 @@ export class NewTodoForm extends Component {
 					id="content"
 					value={this.state.content}
 					onChange={this.handleChange}
+					placeholder="New Todo"
 				/>
 				<button>Add Todo</button>
 			</form>
