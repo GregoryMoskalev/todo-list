@@ -30,6 +30,7 @@ export class TodoList extends Component {
 		));
 		return (
 			<div>
+				<h1>Todo List</h1>
 				<ul>{todos}</ul>
 				<NewTodoForm add={this.add} />
 			</div>
