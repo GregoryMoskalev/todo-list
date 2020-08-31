@@ -26,10 +26,10 @@ export class NewTodoForm extends Component {
 	render() {
 		return (
 			<form onSubmit={this.handleSubmit}>
-				<label htmlFor="content">New Todo</label>
+				<label htmlFor="newTodo">New Todo</label>
 				<input
 					name="content"
-					id="content"
+					id="newTodo"
 					value={this.state.content}
 					onChange={this.handleChange}
 					placeholder="New Todo"
