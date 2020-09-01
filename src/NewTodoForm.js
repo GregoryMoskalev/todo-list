@@ -12,7 +12,7 @@ export class NewTodoForm extends Component {
 
 	handleSubmit(evt) {
 		evt.preventDefault();
-		const todos = { ...this.state, id: uuidv4() };
+		const todos = { ...this.state, id: uuidv4(), completed: false };
 		this.props.add(todos);
 		this.setState({ content: '' });
 	}
