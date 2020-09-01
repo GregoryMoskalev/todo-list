@@ -59,7 +59,7 @@ export class Todo extends Component {
 							onChange={this.handleChange}
 						/>
 						<button>
-							Save <FloppyDisk />
+							<FloppyDisk />
 						</button>
 					</form>
 				</li>
