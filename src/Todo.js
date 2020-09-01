@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import Bin from './icons/Bin';
+import Checkmark from './icons/Checkmark';
+import FloppyDisk from './icons/FloppyDisk';
+import Pencil from './icons/Pencil';
 import './Todo.css';
 
 export class Todo extends Component {
@@ -54,21 +58,24 @@ export class Todo extends Component {
 							value={this.state.content}
 							onChange={this.handleChange}
 						/>
-						<button>Save</button>
+						<button>
+							Save <FloppyDisk />
+						</button>
 					</form>
 				</li>
 			);
 		} else {
 			result = (
-				<div key={this.props.id}>
-					<li
-						onClick={this.handleCompletion}
-						className={this.props.completed ? 'completed' : ''}
-					>
-						{this.props.content}
+				<div className="todo" key={this.props.id}>
+					<li onClick={this.handleCompletion} className="todo__list-item">
+						{this.props.content} {this.props.completed && <Checkmark />}
 					</li>
-					<button onClick={this.handleEdit}>Edit</button>
-					<button onClick={this.handleRemove}>X</button>
+					<button className="todo__btn" onClick={this.handleEdit}>
+						<Pencil />
+					</button>
+					<button className="todo__btn" onClick={this.handleRemove}>
+						<Bin />
+					</button>
 				</div>
 			);
 		}

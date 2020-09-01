@@ -1,0 +1,9 @@
+.todo-list {
+	background-color: orangered;
+	max-width: 400px;
+	margin: auto;
+}
+
+.todo-list__list {
+	background-color: #fff;
+}
