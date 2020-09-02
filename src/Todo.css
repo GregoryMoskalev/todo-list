@@ -1,3 +1,34 @@
 .completed {
 	text-decoration: line-through;
 }
+.todo {
+	display: flex;
+	margin: 0 -3rem 4px;
+	padding: 0.4rem 2rem;
+	justify-content: space-between;
+	background: rgba(255, 255, 255, 0.1);
+}
+.todo__buttons {
+	flex-shrink: 0;
+	padding-left: 0.8rem;
+}
+
+.todo__btn {
+	border: none;
+	font-size: 1.1rem;
+	margin: 0.45rem;
+	background: none;
+	cursor: pointer;
+}
+.todo__btn-white {
+	fill: #fff;
+}
+.todo__btn-green {
+	fill: #39ff14;
+}
+.todo__list-item {
+	width: 100%;
+	cursor: pointer;
+	font-size: 1.1rem;
+	align-self: center;
+}

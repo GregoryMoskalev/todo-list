@@ -33,7 +33,8 @@ export class NewTodoForm extends Component {
 					id="newTodo"
 					value={this.state.content}
 					onChange={this.handleChange}
-					placeholder="New Todo"
+					placeholder="Milk cat"
+					autoFocus
 				/>
 				<button className="todo-form__btn">Add Todo</button>
 			</form>

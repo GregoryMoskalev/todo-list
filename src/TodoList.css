@@ -1,9 +1,19 @@
 .todo-list {
-	background-color: orangered;
-	max-width: 400px;
-	margin: auto;
+	margin: 4rem auto;
+	padding: 2rem 3rem 3rem;
+	max-width: 500px;
+	background: #2f2f2f;
+	color: #fff;
 }
 
 .todo-list__list {
-	background-color: #fff;
+	margin-top: 2.6rem;
+	list-style: none;
+}
+
+.todo-list__header {
+	font-weight: normal;
+	font-size: 2.6rem;
+	letter-spacing: 0.15rem;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
